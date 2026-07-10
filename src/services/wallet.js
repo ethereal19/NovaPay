@@ -5,6 +5,7 @@ import {
   getNetwork as freighterGetNetwork, 
   signTransaction as freighterSignTransaction 
 } from "@stellar/freighter-api";
+import { Networks } from "@stellar/stellar-sdk";
 
 /**
  * Checks if the Freighter extension is installed.
@@ -89,12 +90,13 @@ export const getNetwork = async () => {
 /**
  * Requests the wallet to sign the transaction XDR.
  * @param {string} xdr - Base64 encoded transaction XDR
- * @param {string} network - The network name ('TESTNET' or 'PUBLIC')
  * @returns {Promise<string>} - Signed transaction XDR
  */
-export const signTransaction = async (xdr, network = "TESTNET") => {
+export const signTransaction = async (xdr) => {
   try {
-    const result = await freighterSignTransaction(xdr, { network });
+    const result = await freighterSignTransaction(xdr, {
+      networkPassphrase: Networks.TESTNET,
+    });
     if (result.error) {
       throw new Error(result.error.message || "Transaction signing rejected or failed.");
     }
@@ -104,3 +106,4 @@ export const signTransaction = async (xdr, network = "TESTNET") => {
     throw error;
   }
 };
+

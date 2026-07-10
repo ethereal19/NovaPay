@@ -171,7 +171,7 @@ export const useWallet = () => {
     try {
       // Sign callback helper to bridge to wallet signature requests
       const signCallback = async (unsignedXdr) => {
-        return await signTransaction(unsignedXdr, "TESTNET");
+        return await signTransaction(unsignedXdr);
       };
 
       const result = await sendTransaction(

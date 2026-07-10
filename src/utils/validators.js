@@ -1,4 +1,4 @@
-import { Keypair } from '@stellar/stellar-sdk';
+import { StrKey } from '@stellar/stellar-sdk';
 
 /**
  * Validates a Stellar public address.
@@ -9,12 +9,12 @@ import { Keypair } from '@stellar/stellar-sdk';
 export const isValidStellarAddress = (address) => {
   if (!address || typeof address !== 'string') return false;
   
-  // Basic regex check to prevent throwing inside Keypair
+  // Basic regex check to prevent unnecessary processing
   const stellarAddressRegex = /^G[A-D2-7][A-Z2-7]{54}$/;
   if (!stellarAddressRegex.test(address)) return false;
 
   try {
-    return Keypair.isValidPublicKey(address);
+    return StrKey.isValidEd25519PublicKey(address);
   } catch (error) {
     return false;
   }

@@ -121,6 +121,22 @@ The application gracefully handles and displays:
 
 ---
 
+## 📸 Screenshots
+
+### 1. Wallet Connected State
+![Wallet Connected](./screenshots/wallet-connected.png)
+
+### 2. Balance Displayed
+![Balance Displayed](./screenshots/balance.png)
+
+### 3. Successful Testnet Transaction
+![Successful Testnet Transaction](./screenshots/transaction-success.png)
+
+### 4. Transaction Result Screen
+![Transaction Result](./screenshots/transaction-result.png)
+
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License.
