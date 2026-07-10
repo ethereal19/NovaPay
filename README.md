@@ -4,6 +4,8 @@ A beginner-friendly decentralized application (dApp) built with **React**, **Vit
 
 This application allows users to securely connect their Freighter wallet, view their Testnet XLM balance, and send XLM to another Stellar wallet while displaying transaction status and confirmation.
 
+🚀 **Live Demo:** [nova-pay-nine.vercel.app](https://nova-pay-nine.vercel.app/)
+
 ---
 
 ## 🚀 Features
