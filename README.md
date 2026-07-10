@@ -124,16 +124,16 @@ The application gracefully handles and displays:
 ## 📸 Screenshots
 
 ### 1. Wallet Connected State
-![Wallet Connected](./screenshots/wallet-connected.png)
+![Wallet Connected](./screenshots/Wallet%20Connected.png)
 
 ### 2. Balance Displayed
-![Balance Displayed](./screenshots/balance.png)
+![Balance Displayed](./screenshots/Balance%20Displayed.png)
 
 ### 3. Successful Testnet Transaction
-![Successful Testnet Transaction](./screenshots/transaction-success.png)
+![Successful Testnet Transaction](./screenshots/Successful%20Testnet%20Transaction.png)
 
 ### 4. Transaction Result Screen
-![Transaction Result](./screenshots/transaction-result.png)
+![Transaction Result](./screenshots/Transaction%20Result%20Screen.png)
 
 ---
 
